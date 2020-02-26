@@ -2,10 +2,35 @@ package fr.uvsq21504875;
 
 public class Robot extends RobotStatique {
   private Position position;
-  public Robot(){
+  public Robot(int x,int y){
     super();
-    //Position.
+    this.position= new Position(x,y);
   }
 
-  public void avance(){//Faire avancer le robot}
+  public Position getPosition() {
+    return position;
+  }
+
+  public void setPosition(Position position) {
+    this.position = position;
+  }
+
+  public void avance(){
+    switch (this.direction){
+      case EST:
+        this.getPosition().setX(this.getPosition().getX()+1);
+        break;
+      case SUD:
+        this.getPosition().setY(this.getPosition().getY()-1);
+        break;
+      case NORD:
+        this.getPosition().setY(this.getPosition().getY()+1);
+        break;
+      case OUEST:
+        this.getPosition().setX(this.getPosition().getX()-1);
+        break;
+      default:
+        break;
+    }
+  }
 }

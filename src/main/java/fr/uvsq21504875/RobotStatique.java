@@ -4,5 +4,7 @@ public class RobotStatique{
   protected Direction direction;
 
   public RobotStatique(){}
-  public void tourne(){}
+  public void tourne(){
+
+  }
 }
