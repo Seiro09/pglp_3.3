@@ -1,7 +1,10 @@
 package fr.uvsq21504875;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class RobotList {
-  private List<Robot> Robots;
+  private ArrayList<Robot> Robots;
 
   public RobotList(){
     this.Robots = new ArrayList()<>;

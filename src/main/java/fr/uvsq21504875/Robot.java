@@ -7,6 +7,11 @@ public class Robot extends RobotStatique {
     this.position= new Position(x,y);
   }
 
+  public Robot(int x,int y, Direction d){
+    super(d);
+    this.position= new Position(x,y);
+  }
+
   public Position getPosition() {
     return position;
   }
